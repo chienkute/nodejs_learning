@@ -1,0 +1,21 @@
+<div class="mt-4">
+  <form method="POST" action="/course/{{course.id}}?_method=PUT">
+    <div class="mb-3">
+      <label for="name" class="form-label">Tiêu đề</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        value="{{course.name}}"
+      />
+    <div class="mb-3">
+      <label for="description" class="form-label">Mô tả</label>
+      <textarea
+        class="form-control"
+        id="description"
+        name="description"
+      >{{course.description}}</textarea>
+    <button type="submit" class="btn btn-primary">Sửa</button>
+  </form>
+</div>
