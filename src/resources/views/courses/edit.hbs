@@ -17,5 +17,15 @@
         name="description"
       >{{course.description}}</textarea>
     <button type="submit" class="btn btn-primary">Sửa</button>
+    <button type="submit" class="btn btn-primary" id="btn-delete">Xóa</button>
   </form>
+  {{!-- Delete --}}
+  <form method="POST" action="/course/{{course.id}}?_method=DELETE"></form>
 </div>
+<script>
+  var btnDelete = document.getElementById("btn-delete")
+  console.log(btnDelete)
+  btnDelete.onclick = () => {
+
+  }
+</script>
